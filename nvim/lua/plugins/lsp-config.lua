@@ -47,7 +47,13 @@ return {
 				capabilities = capabilities,
       })
 
+      lspconfig.emmet_ls.setup({
+				capabilities = capabilities,
+      })
 
+      lspconfig.jinja_lsp.setup({
+				capabilities = capabilities,
+      })
 
 			--configuration of keybindings
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})

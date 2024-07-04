@@ -26,5 +26,18 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.scrolloff = 8
 
+--configuracion de agregado de comentarios
+vim.keymap.set("n", "<leader>ac", "<Cmd>set formatoptions=croql<CR>")
+vim.keymap.set("n", "<leader>dc", "<Cmd>set formatoptions=<CR>")
 
+-- agregando clipboard ctrl c y ctrl p
+vim.keymap.set("v", "<C-c>", '"+y')
+vim.keymap.set("v", "<C-p>", '"+p')
+vim.keymap.set("n", "<C-p>", '"+p')
+
+--Agregar salto de lina hacia abajo
+vim.keymap.set("n", "G", "Gzz")
+
+--Identacion sin formater
+vim.keymap.set("n", "<leader>gg", "ggVG==")
 
