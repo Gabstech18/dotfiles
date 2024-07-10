@@ -13,4 +13,4 @@ vim.opt.rtp:prepend(lazypath)
 
 require("user_configs")
 require("lazy").setup("plugins")
-vim.cmd("colorscheme oh-lucy")
+vim.cmd("colorscheme dracula")

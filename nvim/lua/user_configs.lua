@@ -35,9 +35,19 @@ vim.keymap.set("v", "<C-c>", '"+y')
 vim.keymap.set("v", "<C-p>", '"+p')
 vim.keymap.set("n", "<C-p>", '"+p')
 
+--select all
+vim.keymap.set("n", "<leader>sa", "ggVG")
+
 --Agregar salto de lina hacia abajo
 vim.keymap.set("n", "G", "Gzz")
 
 --Identacion sin formater
-vim.keymap.set("n", "<leader>gg", "ggVG==")
+vim.keymap.set("n", "<leader>gg", "ggVG=")
 
+--Selection of colorschemes
+vim.keymap.set("n",  "<leader>c1", ":colorscheme monokai<CR>")
+vim.keymap.set("n",  "<leader>c2", ":colorscheme oh-lucy<CR>")
+vim.keymap.set("n",  "<leader>c3", ":colorscheme dracula<CR>")
+vim.keymap.set("n",  "<leader>c4", ":colorscheme kanagawa<CR>")
+vim.keymap.set("n",  "<leader>c5", ":colorscheme rose-pine-dawn<CR>")
+vim.keymap.set("n",  "<leader>c6", ":colorscheme catppuccin-latte<CR>")
