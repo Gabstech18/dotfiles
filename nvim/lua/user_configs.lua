@@ -7,7 +7,7 @@ vim.cmd("set nu")
 vim.cmd("set relativenumber")
 vim.g.mapleader = " "
 
---MOVE LINES WITH ALT WITHIN TEXT
+--MOVE LINES WITHIN TEXT
 --VISUAL
 vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
@@ -22,9 +22,9 @@ vim.keymap.set("i", "<C-k>", "<Esc>:m .-2<CR>==gi")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
-vim.opt.hlsearch = false
+vim.opt.hlsearch = true
 vim.opt.incsearch = true
-vim.opt.scrolloff = 8
+vim.opt.scrolloff = 10
 
 --configuracion de agregado de comentarios
 vim.keymap.set("n", "<leader>ac", "<Cmd>set formatoptions=croql<CR>")
@@ -35,8 +35,11 @@ vim.keymap.set("v", "<C-c>", '"+y')
 vim.keymap.set("v", "<C-p>", '"+p')
 vim.keymap.set("n", "<C-p>", '"+p')
 
+-- guardado rapido
+vim.keymap.set("n", "<C-s>", ":w<CR>")
+
 --select all
-vim.keymap.set("n", "<leader>sa", "ggVG")
+vim.keymap.set("n", "<leader>sa", "GVgg")
 
 --Agregar salto de lina hacia abajo
 vim.keymap.set("n", "G", "Gzz")
@@ -45,9 +48,9 @@ vim.keymap.set("n", "G", "Gzz")
 vim.keymap.set("n", "<leader>gg", "ggVG=")
 
 --Selection of colorschemes
-vim.keymap.set("n",  "<leader>c1", ":colorscheme monokai<CR>")
-vim.keymap.set("n",  "<leader>c2", ":colorscheme oh-lucy<CR>")
-vim.keymap.set("n",  "<leader>c3", ":colorscheme dracula<CR>")
-vim.keymap.set("n",  "<leader>c4", ":colorscheme kanagawa<CR>")
-vim.keymap.set("n",  "<leader>c5", ":colorscheme rose-pine-dawn<CR>")
-vim.keymap.set("n",  "<leader>c6", ":colorscheme catppuccin-latte<CR>")
+vim.keymap.set("n", "<leader>c1", ":colorscheme monokai<CR>")
+vim.keymap.set("n", "<leader>c2", ":colorscheme oh-lucy<CR>")
+vim.keymap.set("n", "<leader>c3", ":colorscheme dracula<CR>")
+vim.keymap.set("n", "<leader>c4", ":colorscheme rose-pine-main<CR>")
+vim.keymap.set("n", "<leader>c5", ":colorscheme rose-pine-dawn<CR>")
+vim.keymap.set("n", "<leader>c6", ":colorscheme catppuccin-latte<CR>")
